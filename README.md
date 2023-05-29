@@ -10,20 +10,26 @@
 ### Assignment
 ## Part 1 : Create and Deploy an API
 1. Create a new workspace in Anypoint Studio
-2. Create an API specfication project in Anypoint Studio named jc-users-eapi.
-3. The API specification should use resourceTypes 
-4. The API specification should use a trait named '''client-id-required''' . 
-5. Design the RAML API specification to expose CRUD operation on User object . The User Object model (user.raml) is attached in this repo.
+2. Create an API specfication project in Anypoint Studio named jc-industry-eapi.
+3. The API specification should use resourceTypes. 
+4. The API specification should use a trait named 'client-id-required' . This trait must be applied on all the end points.  
+5. Design the RAML API specification to expose CRUD operation on User object and Customer object. The Object models (user.raml and customer.raml) are attached in this repo.
+ - Users
     - GET /users
     - POST /user
     - PATCH /user/{id}
     - DELETE /user/{id}
+  - Customers
+    - GET /customers
+    - POST /customer
+    - PATCH /customer/{id}
+    - DELETE /customeer/{id}
 6. Publish the API specification to Design Centre.
 7. Publish the API specification to Anypoint Exchange.
-8. Create a new mule project jc-mulesoft-users-eapi by importing the API specification from Design centre into your workspace. 
-9. Deploy the project jc-mulesoft-users-eapi to Cloudhub.
-10. Manage the API jc-users-eapi in API manager.
-11. Apply the client_id enforcement policy on the API jc-users-eapi.
+8. Create a new mule project jc-mulesoft-industry-eapi by importing the API specification from Design centre into your workspace. 
+9. Deploy the project jc-mulesoft-industry-eapi to Cloudhub.
+10. Manage the API jc-industry-eapi in API manager.
+11. Apply the client_id enforcement policy on the API jc-industry-eapi.
 12. Access the exposed API via any REST client.
 
 ## Part 2 : Secure the API 
