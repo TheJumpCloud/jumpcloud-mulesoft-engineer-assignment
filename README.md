@@ -11,19 +11,20 @@
 ## Part 1 : Create and Deploy an API
 1. Create a new workspace in Anypoint Studio
 2. Create an API specfication project in Anypoint Studio named jc-users-eapi.
-3. The API specification should use resourceTypes and traits for client_id enforcement policy. 
-4. Design the RAML API specification to expose CRUD operation on User object . The User Object model (user.raml) is attached in this repo.
+3. The API specification should use resourceTypes 
+4. The API specification should use a trait named '''client-id-required''' . 
+5. Design the RAML API specification to expose CRUD operation on User object . The User Object model (user.raml) is attached in this repo.
     - GET /users
     - POST /user
     - PATCH /user/{id}
     - DELETE /user/{id}
-5. Publish the API specification to Design Centre.
-6. Publish the API specification to Anypoint Exchange.
-7. Create a new mule project jc-mulesoft-users-eapi by importing The API specification from Design centre into your workspace. 
-8. Deploy the project jc-mulesoft-users-eapi to Cloudhub.
-9. Manage the API jc-users-eapi in API manager.
-10. Apply the client_id enforcement policy on the API jc-users-eapi.
-11. Access the exposed API via any REST client.
+6. Publish the API specification to Design Centre.
+7. Publish the API specification to Anypoint Exchange.
+8. Create a new mule project jc-mulesoft-users-eapi by importing the API specification from Design centre into your workspace. 
+9. Deploy the project jc-mulesoft-users-eapi to Cloudhub.
+10. Manage the API jc-users-eapi in API manager.
+11. Apply the client_id enforcement policy on the API jc-users-eapi.
+12. Access the exposed API via any REST client.
 
 ## Part 2 : Secure the API 
 1. Create 2 self signed certificates via open ssl. 
