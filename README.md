@@ -23,7 +23,7 @@
     - GET /customers
     - POST /customer
     - PATCH /customer/{id}
-    - DELETE /customeer/{id}
+    - DELETE /customer/{id}
 6. Publish the API specification to Design Centre from Anypoint Studio.
 7. Publish the API specification to Anypoint Exchange from Design Centre.
 8. Create a new mule project jc-mulesoft-industry-eapi by importing the API specification from Design centre into your workspace. 
@@ -35,5 +35,5 @@
 
 ## Part 2 : Secure the API 
 1. As Cloudhub will not allow you to implement 2-WAY TLS, lets try to implement 2-WAY TLS locally.
-2. Create 2 self signed certificates via open ssl. 
+2. Create self signed certificates via open ssl. 
 3. Secure the API via 2-WAY TLS.
